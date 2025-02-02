@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanna Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <!-- navbar section -->
+  <header> 
+    
+      <nav class="nav-color"> 
+        <div class="menu-container ">
+            <div class="brand">
+                <label  onclick=showSlideBar() class="fas fa-bars" style="color: white;"></label>
+                <a class="active" href="index.html">
+                    <img class="logoImg" src="./logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#heroSection">Home</a>
+                </li>
+                <li><a href="#featureSection">Services</a></li>
+                <li><a href="#featureSection-t">Reviews</a></li>
+                <li><a href="#section">Contacts</a></li>
+                <li class="li-btn">
+                    <button id="toggleMode" class="btn btn-blue">
+                       Dark mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- wrapper -->
+        <div class="menu-container ">
+            <ul class="nav-list nav-wrapper">
+                <li onclick=hideSidebar() class="fa-solid fa-xmark" style="font-size: 22px;"></li>
+                <li><a href="#heroSection">Home</a>
+                </li>
+                <li><a href="#featureSection">Services</a></li>
+                <li><a href="#featureSection-t">Reviews</a></li>
+                <li><a href="#section">Contacts</a></li>
+                <li class="li-btn">
+                    <button id="toggleMode" class="btn btn-blue">
+                       Dark mode
+                    </button>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </nav></header> 
+    <!-- hero section -->
+    <section class="heroSection" id="heroSection">
+        <div class="heroContnt">
+            <div class="hero1">
+            <h6 class="heroHanding">Wanna tech agency</h6>
+            <div class="typewriter">
+                <h1>Where Innovation Meets <span class="dynamic-text" style="color: chartreuse; "></span> </h1>
+                
+    </div>
+                <p class="heropara">
+                    <button class="btnDesign">
+                        Website Development
+                    </button>
+                    <button class="btnDesign">
+                        Mobile App Development
+                    </button>
+                    <button class="btnDesign">
+                        Digital Marketing
+                    </button>
+                    <button class="btnDesign">
+                        Social Media 
+                    </button>
+                </p>
+            </div>
+            <div class="hero2">
+               <a href=""> <button onclick=togglePopup() class="getStarted">
+                    Show popup
+                </button></a>
+               <a href=""> <button class="readMore">
+                    Read More
+                </button></a>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick=togglePopup()>&times;</div>
+                <h1>About Us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum possimus vitae laboriosam fugit quasi quibusdam rerum id magni nam.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+        <div class="heroImg">
+            <div class="star" style="margin-right:10px; align-self:first baseline; ">
+            <i class="fa-solid fa-star" style="color: chartreuse;font-size: 1.8vw;"></i>
+            <i class="fa-solid fa-star" style="color: chartreuse;font-size: 0.8vw;"></i>
+        </div>
+            <img class="imgHero" src="./people-pointing-laptop-screen.jpg" alt="">
+            <div class="side" >
+                <h1>800+</h1>
+                <h4 style="color:rgb(47, 47, 47);">Projects Completed</h4>
+                <H1>20+</H1>
+                <h4 style="color:rgb(47, 47, 47);">Years of Experience</h4>
+                <h1>500+</h1>
+                <h4 style="color:rgb(47, 47, 47);">Happy Customers</h4>
+            </div>
+        </div>
+    </section>
+    <!-- services section  -->
+    <div class="featureSection" id="featureSection">
+        <div class="ourFeature">
+            <h1>
+                <center>Our Services</center>
+            </h1>
+            <p class="Featurepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est accusamus
+                hic optio debitis asperiores, dicta deserunt quos nesciunt quam aperiam dolore fuga reiciendis enim
+                laudantium id dolorum ad fugiat quidem laborum explicabo. Consequuntur ipsum voluptatibus, impedit
+                ducimus maiores autem.</p>
+        </div>
+        <!-- cards -->
+            <div>
+            <div class="parentCard1">
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Development</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, nesciunt?</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h4>Mobile friendly</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, numquam.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-brush"></i>
+                    <h4>Social Media managements</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, accusamus.</p>
+                </div>
+            </div>
+            <!-- <div></div> -->
+         
+        <!-- </div> -->
+    </div>
+
+       <!-- projects  section  -->
+       <div class="featureSection" id="featureSection-t">
+        <div class="ourFeature">
+            <h1>
+                <center>Projects We have Completed </center>
+            </h1>
+        </div>
+        <!-- cards -->
+            <div class="parentCard1">
+                <div class="card-p">
+                   <img class="p-card" src="./p1.jpg" alt="">
+                </div>
+                <div class="card-p">
+                   <img class="p-card" src="./p2.jpg" alt="">
+                </div>
+                <div class="card-p">
+                   <img class="p-card" src="./p3.jpg" alt="">
+                </div>
+            </div>
+           
+    </div>
+           <!-- testimonials  section  -->
+           <div class="ourFeature">
+            <h1>
+                <center>Our Satisfied Clients </center>
+             
+            </h1>
+        </div>
+            <div class="testimonialAni">
+           <div class="featureSection" id="featureSection-t">
+          
+            <!-- cards -->
+                <div class="parentCard1">
+                    <div class="card">
+                        <i class="fa-solid fa-user"></i>
+                        <p><b>"</b>Lorem ipsum, dolor sit amet consectetur <b>"</b></p>
+                     
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-user"></i>
+                        <p><b>"</b>Lorem ipsum dolor <b>"</b></p>
+                      
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-user"></i>
+                        <p><b>"</b> Lorem ipsum dolor sit amet consectetur,  <b>"</b></p>
+                       
+                    </div>
+                </div>
+               
+        </div>
+       
+    </div>
+    <!-- contact ussection -->
+    <div class="section" id="section">
+        <div class="sectionContent">
+            <h1 class="secHanding">Contact Us </h1>
+            <p class="secpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto aliquid, laudantium
+                animi ad autem debitis soluta nesciunt modi quidem deserunt.
+                <div class="social-icons" style="font-size: large; padding-bottom: 3vh;" >
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </p>
+              
+            <button class="getStarted-c"  style="color: rgb(255, 255, 255); background-color:chartreuse;">
+                Read More
+            </button>
+        </div>
+        <!-- contact us form -->
+        <div id="contact" class="contact-section">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright &copy; 2025 All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
